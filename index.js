@@ -55,7 +55,8 @@ async function run() {
             // const email = req.params.email;
             // const email = "bulbulahammedjibon@gmail.com";
             const email = req.params.email;
-            const quary = { AddedUserData: email };
+            const quary = { AddedUserData : email  };
+            
             const data = userCollection.find(quary);
             const result = await data.toArray();
 
